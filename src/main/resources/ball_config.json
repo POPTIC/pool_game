@@ -1,0 +1,14 @@
+[{
+  "location_x" : 100,
+  "location_y" : 120,
+  "type" : true,
+  "ball_color" : 20,
+  "ball_size" : 30
+},
+  {
+  "location_x" : 30,
+  "location_y" : 10,
+  "type" : true,
+  "ball_color" : 20,
+  "ball_size" : 10
+}]
