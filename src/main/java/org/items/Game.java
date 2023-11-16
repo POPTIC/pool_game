@@ -8,6 +8,7 @@ import javafx.scene.canvas.Canvas;
 import javafx.util.Duration;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Game implements MovingProcess{
@@ -168,6 +169,18 @@ public class Game implements MovingProcess{
             }
         }
 
+    }
+    public ArrayList<VelocityVector> velocity_decomposition(VelocityVector v, VelocityVector ref_unit_v){
+        ArrayList<VelocityVector> decomposition_v = new ArrayList<>(2);
+        VelocityVector a = new VelocityVector();
+        double projection_length = v.get_first_weight() * ref_unit_v.get_first_weight() +
+                v.get_second_weight() * ref_unit_v.get_second_weight();
+        decomposition_v.get(0).setV_vector(projection_length * ref_unit_v.get_first_weight(),
+                projection_length * ref_unit_v.get_second_weight());
+        decomposition_v.get(1).setV_vector(v.get_first_weight() - decomposition_v.get(0).get_first_weight(),
+                v.get_second_weight() - decomposition_v.get(0).get_second_weight());
+
+        return decomposition_v;
     }
     private void update_unit_direction_vector(int i, int j){
         direction_x = hitBall.get(i).getCenterX() - hitBall.get(j).getCenterX();
