@@ -6,8 +6,6 @@ import javafx.scene.shape.Circle;
 public class Ball extends Circle{
     PlainVector velocityVector;
 
-    //TODO: 查询final关键字的作用
-
     public double getSpeed_x() {
         return velocityVector.get_first_weight();
     }
