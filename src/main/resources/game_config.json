@@ -1,0 +1,44 @@
+{
+"ball_set":[
+  {
+    "location_x": 300.0,
+    "location_y": 100.0,
+    "color": 1,
+    "circle_radius": 20.0,
+    "init_speed_x": 0.0,
+    "init_speed_y": 0.0
+  },
+  {
+    "location_x": 300.0,
+    "location_y": 200.0,
+    "color": 2,
+    "circle_radius": 20.0,
+    "init_speed_x": 0.0,
+    "init_speed_y": 0.0
+  },
+  {
+    "location_x": 300.0,
+    "location_y": 300.0,
+    "color": 3,
+    "circle_radius": 20.0,
+    "init_speed_x": 0.0,
+    "init_speed_y": 0.0
+  }
+],
+  "key-ball": {
+    "location_x": 50.0,
+    "location_y": 200.0,
+    "color":0,
+    "circle_radius": 20.0,
+    "init_speed_x": 1.0,
+    "init_speed_y": 1.0
+  },
+  "table": {
+    "table_length": 600.0,
+    "table_width": 400.0,
+    "frictional_coefficient": 0.1
+  },
+  "ball-hole": {
+    "size": 30.0
+  }
+}

@@ -1,12 +1,10 @@
-package org.items;
+package org.items.gamefactor;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Vector;
 
-public class VelocityVector {
+public class PlainVector {
     private final double[] v_vector;
-    VelocityVector(){
+    PlainVector(){
         v_vector = new double[2];
     }
 
@@ -20,6 +18,12 @@ public class VelocityVector {
     public double get_second_weight(){
         return v_vector[1];
     }
+    public void set_vector_x(double x){
+        v_vector[0] = x;
+    }
+    public void set_vector_y(double y){
+        v_vector[1] = y;
+    }
     @Override
     public String toString() {
         return "VelocityVector{" +
@@ -27,3 +31,4 @@ public class VelocityVector {
                 '}';
     }
 }
+
